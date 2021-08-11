@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+div, p, input, button, form, span, a, ul,li {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+ 
+}
+.header {
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4ebefe+0,2989d8+50,378fd9+100 */
+    background: #4ebefe; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #4ebefe 0%, #2989d8 50%, #378fd9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #4ebefe 0%,#2989d8 50%,#378fd9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #4ebefe 0%,#2989d8 50%,#378fd9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebefe', endColorstr='#378fd9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+}
+
+.offer{
+
+
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    width: 652px;
+    margin-bottom: 48px;
+
+}
+.title span{
+    font-size: 59px;
+}
+.intro {
+    margin-bottom: 44px; 
+    width: 415px;
+    line-height: 1.6em;
+}
+.wrapper   {
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffd429;
+    color: #2e2a1b;
+    display: block;
+    padding: 25px 0;
+    width: 222px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    background-color: #d82c28;
+    color: rgb(255, 251, 0);
+}
+.desktop{
+    margin-top: 62px;
+}
+.expectation {
+    margin-top: 120px;
+    margin-bottom: 122px;
+}
+.section-expextation{
+    font-size: 30px;
+    font-weight: black;
+    text-align: center;
+    margin-bottom: 78px;
+}
+.item{
+    background-image: url(/image/icon1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 82px;
+    width: 300px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.item-title{
+ font-size: 19px;
+}
+.item-text {
+    font-size: 15px;
+    margin-top: 18px;
+    width: 300px;
+}
+.palm{
+    background-image: url(/image/icon2.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+ 
+}
+.rocket {
+    background-image: url(/image/icons3.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.order {
+    background-color: #ecf3f8;
+   
+}
+.feedback {
+    font-size: 30px;
+    padding-top: 120px;
+    text-align: center;
+}
+form {
+    width: 340px;
+    border: 1 px solid black;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 60px;
+    box-sizing: border-box;
+}
+form input {
+    padding: 17px 26px;
+    width: 342px;
+    margin-bottom: 14px;
+}
+.button-form {
+    width: 343px;
+
+}
+.footer {
+    padding: 66px 0;
+    background-color: #164d7a;
+}
+.footer-text{
+    color: #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*---- Responsive ---- */
+
+/* 992px-1200px*/
+@media screen and (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+}
+/* 768px-992px*/
+@media screen and (max-width: 992px){
+    .container{
+        width: 720px;
+    }
+    .offer {
+        width: 100%;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .intro {
+        width: 100%;
+    }
+
+    .items {
+        flex-direction: column;   
+    }
+    .item {
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+/* 576px-768px*/
+@media screen and (max-width: 768px){
+    .container{
+        width: 540px;
+    }
+    .title {
+        width: auto;
+    }
+    .desktop{
+        width: 100%;
+    }
+    form input {
+        width: 100%;
+    }
+    .button-form {
+        width: 100%;
+    
+    }
+    
+}
+/* 320px-576px*/
+@media screen and (max-width: 576px){
+    .container{
+        width: 90%;
+    }
+    .order{
+        width: auto;
+    }
+
+    form input {
+        width: 85%;
+    }
+    .button-form {
+        width: 85%;
+    
+    }
+}
